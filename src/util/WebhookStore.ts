@@ -1,6 +1,7 @@
-import { botIcon } from '@config';
-import Eris, { Client, GuildTextableChannel, Message, WebhookPayload } from 'eris'
-
+import { botIcon, webhooks } from '@config';
+import { Client, GuildTextableChannel, Message, WebhookPayload } from 'eris'
+import DebugEvent from '@events/debug';
+import Mysti from '@Mysti';
 interface WebhookInfo {
   id: string,
   token: string,
@@ -29,4 +30,16 @@ class Webhook {
   }
 
   async delete(reason?: string) { return this.client.deleteWebhook(this.info.id, this.info.id, reason) }
+}
+
+export default class WebhookStore {
+  private static list = new Map<String, Webhook>();
+  static client = new Client("", { intents: [] }).on('debug', (info, id) => DebugEvent.listener.call(undefined as unknown as Mysti, info, id));
+  static get(name: keyof typeof webhooks) { return (this.list.get(name) ?? this.list.set(name, new Webhook(webhooks[name], this.client)).get(name))!; }
+
+  static async send(name: keyof typeof webhooks, payload: WebhookPayload, wait: true): Promise<Message<GuildTextableChannel>>;
+	static async send(name: keyof typeof webhooks, payload: WebhookPayload, wait?: false): Promise<void>;
+	static async send(name: keyof typeof webhooks, payload: WebhookPayload, wait = false): Promise<void | Message<GuildTextableChannel>> { return this.get(name).send(payload, wait as true); }
+
+	static async delete(name: keyof typeof webhooks, reason?: string) { return this.get(name).delete(reason); }
 }

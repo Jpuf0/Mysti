@@ -1,8 +1,13 @@
-import { beta, errorsDir } from "@config";
+import { apiURL, beta, errorsDir } from "@config";
+import Mysti from "@Mysti";
+import EmbedHelper from "@util/EmbedHelper";
 import Logger from "@util/Logger";
+import WebhookStore from "@util/WebhookStore";
+import { Strings } from "@uwu-codes/utils";
 import { randomBytes } from "crypto";
 import * as fs from 'fs-extra';
 import os from 'os';
+
 export default class ErrorHandler {
   static getId() { return randomBytes(6).toString('hex'); }
   private static errorCache = [] as Array<string>;
@@ -38,7 +43,23 @@ export default class ErrorHandler {
 		Logger.getLogger("ErrorHandler").error(`Error Code: ${code}, Stack:`);
 		console.error("Error", err);
 
-    //TODO: Webhook
+    await WebhookStore.send("errors", {
+			embeds: [
+				new EmbedHelper()
+					.setTitle(Strings.truncate(`${err.name}: ${err.message}`, 256))
+					.setDescription([
+						...([
+							`Source: ${from}`
+						]),
+						"",
+						`Code: \`${code}\``,
+						`ID: \`${id}\``,
+						`Report: [${apiURL}/errors/${id}](${apiURL}/errors/${id})`
+					].join("\n"))
+					.setColor("red")
+					.toJSON()
+			]
+		})
 
     return code;
   }

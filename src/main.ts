@@ -2,10 +2,10 @@ import { Client, ClientOptions } from "eris";
 import { performance } from "perf_hooks";
 import * as fs from 'fs-extra';
 import { errorsDir, eventsDir, mainLogsDir } from "@config";
-import { fstat } from "fs";
 import Logger from "@util/Logger";
 import { Strings, Utility } from "@uwu-codes/utils";
 import ClientEvent from "@util/ClientEvent";
+
 export default class Mysti extends Client {
   events = new Map<string, ClientEvent>();
 

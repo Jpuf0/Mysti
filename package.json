@@ -12,6 +12,8 @@
    },
    "devDependencies": {
       "@smol-code/tsconfig": "^1.0.0",
+      "@types/express": "^4.17.13",
+      "@types/morgan": "^1.9.3",
       "@types/node": "^16.11.6",
       "@types/source-map-support": "^0.5.4",
       "@typescript-eslint/eslint-plugin": "^5.2.0",
@@ -29,8 +31,10 @@
       "@yarn-tool/yarnlock-parse": "^1.0.18",
       "@yarnpkg/lockfile": "^1.1.0",
       "eris": "https://github.com/DonovanDMC/eris",
+      "express": "^4.17.1",
       "fs-extra": "^10.0.0",
       "module-alias": "^2.2.2",
+      "morgan": "^1.10.0",
       "prettier": "^2.4.1",
       "source-map-support": "^0.5.20",
       "tslog": "^3.2.2"
