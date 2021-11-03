@@ -7,21 +7,13 @@
     "skipLibCheck": true,
     "inlineSourceMap": true,
     "paths": {
-      "@root/*": [
-        "../*"
-      ],
-      "@config": [
-        "config/index.ts"
-      ],
-      "@config/*": [
-        "config/*"
-      ],
-      "@util/*": [
-        "util/*"
-      ],
-      "@Mysti": [
-        "main.ts"
-      ]
+      "@root/*": ["../*"],
+			"@config": ["config/index.ts"],
+			"@config/*": ["config/*"],
+			"@util/*": ["util/*"],
+			"@handlers/*": ["util/handlers/*"],
+			"@events/*": ["events/*"],
+			"@Mysti": ["main.ts"]
     },
   },
   "include": [

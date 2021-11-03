@@ -9,6 +9,8 @@ moduleAlias.addAliases({
 	"@root": d,
 	"@config": `${d}/src/config`,
 	"@util": `${d}/src/util`,
+	"@handlers": `${d}/src/util/handlers`,
+	"@events": `${d}/src/events`,
 	"@Mysti": `${d}/src/main`
 });
 import sauce from "source-map-support";

@@ -1,11 +1,11 @@
 import { Client, ClientOptions } from "eris";
 import { performance } from "perf_hooks";
 import * as fs from 'fs-extra';
-import { eventsDir } from "@config";
+import { errorsDir, eventsDir, mainLogsDir } from "@config";
 import { fstat } from "fs";
 import Logger from "@util/Logger";
 import { Strings, Utility } from "@uwu-codes/utils";
-import ClientEvent from "@util/ClientEvents";
+import ClientEvent from "@util/ClientEvent";
 export default class Mysti extends Client {
   events = new Map<string, ClientEvent>();
 
@@ -21,9 +21,9 @@ export default class Mysti extends Client {
 
   checkDirs() {
     [
-      "mainLogsDir",
-      "errorsDir",
-      "eventsDir",
+      mainLogsDir,
+      errorsDir,
+      eventsDir,
     ].forEach(f => fs.mkdirpSync(f));
   }
 
