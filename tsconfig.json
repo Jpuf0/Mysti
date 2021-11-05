@@ -11,6 +11,8 @@
 			"@config": ["config/index.ts"],
 			"@config/*": ["config/*"],
 			"@util/*": ["util/*"],
+      "@db": ["db/index.ts"],
+      "@db/*": ["db/*"],
 			"@handlers/*": ["util/handlers/*"],
 			"@events/*": ["events/*"],
 			"@Mysti": ["main.ts"]

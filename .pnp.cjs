@@ -53,6 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:76c618c0d5690b675a18a9de3a0ee508f52e9dfb01949224e9f342f534b01ab009243861df1ead6ed30ad38cecfde1d6e342afa0e6914b33e85c7c4d6aebae3b#npm:8.3.0"],
             ["express", "npm:4.17.1"],
             ["fs-extra", "npm:10.0.0"],
+            ["mariadb", "npm:2.5.5"],
             ["module-alias", "npm:2.2.2"],
             ["morgan", "npm:1.10.0"],
             ["prettier", "npm:2.4.1"],
@@ -277,6 +278,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/geojson", [
+        ["npm:7946.0.8", {
+          "packageLocation": "./.yarn/cache/@types-geojson-npm-7946.0.8-df9187edab-6049a39b02.zip/node_modules/@types/geojson/",
+          "packageDependencies": [
+            ["@types/geojson", "npm:7946.0.8"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/ioredis", [
         ["npm:4.27.8", {
           "packageLocation": "./.yarn/cache/@types-ioredis-npm-4.27.8-73227263de-c718933d6e.zip/node_modules/@types/ioredis/",
@@ -334,6 +344,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
+        ["npm:14.17.32", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.32-a7799c3ea0-c3ec45db5d.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.17.32"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:15.14.9", {
           "packageLocation": "./.yarn/cache/@types-node-npm-15.14.9-739a59edff-49f7f0522a.zip/node_modules/@types/node/",
           "packageDependencies": [
@@ -2159,6 +2176,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["safer-buffer", "npm:2.1.2"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:0.6.3", {
+          "packageLocation": "./.yarn/cache/iconv-lite-npm-0.6.3-24b8aae27e-3f60d47a5c.zip/node_modules/iconv-lite/",
+          "packageDependencies": [
+            ["iconv-lite", "npm:0.6.3"],
+            ["safer-buffer", "npm:2.1.2"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["ignore", [
@@ -2597,6 +2622,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["long", [
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/long-npm-4.0.0-ecd96a31ed-16afbe8f74.zip/node_modules/long/",
+          "packageDependencies": [
+            ["long", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["lru-cache", [
         ["npm:6.0.0", {
           "packageLocation": "./.yarn/cache/lru-cache-npm-6.0.0-b4c8668fe1-f97f499f89.zip/node_modules/lru-cache/",
@@ -2612,6 +2646,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/make-error-npm-1.3.6-ccb85d9458-b86e5e0e25.zip/node_modules/make-error/",
           "packageDependencies": [
             ["make-error", "npm:1.3.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["mariadb", [
+        ["npm:2.5.5", {
+          "packageLocation": "./.yarn/cache/mariadb-npm-2.5.5-863f012fdc-28e09ad071.zip/node_modules/mariadb/",
+          "packageDependencies": [
+            ["mariadb", "npm:2.5.5"],
+            ["@types/geojson", "npm:7946.0.8"],
+            ["@types/node", "npm:14.17.32"],
+            ["denque", "npm:1.5.1"],
+            ["iconv-lite", "npm:0.6.3"],
+            ["long", "npm:4.0.0"],
+            ["moment-timezone", "npm:0.5.33"],
+            ["please-upgrade-node", "npm:3.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -2719,6 +2769,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["moment", [
+        ["npm:2.29.1", {
+          "packageLocation": "./.yarn/cache/moment-npm-2.29.1-787d9fdafd-1e14d5f422.zip/node_modules/moment/",
+          "packageDependencies": [
+            ["moment", "npm:2.29.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["moment-timezone", [
+        ["npm:0.5.33", {
+          "packageLocation": "./.yarn/cache/moment-timezone-npm-0.5.33-f2b784cd1b-dea6043b4a.zip/node_modules/moment-timezone/",
+          "packageDependencies": [
+            ["moment-timezone", "npm:0.5.33"],
+            ["moment", "npm:2.29.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["morgan", [
         ["npm:1.10.0", {
           "packageLocation": "./.yarn/cache/morgan-npm-1.10.0-a0da109b6b-fb41e226ab.zip/node_modules/morgan/",
@@ -2786,6 +2855,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:76c618c0d5690b675a18a9de3a0ee508f52e9dfb01949224e9f342f534b01ab009243861df1ead6ed30ad38cecfde1d6e342afa0e6914b33e85c7c4d6aebae3b#npm:8.3.0"],
             ["express", "npm:4.17.1"],
             ["fs-extra", "npm:10.0.0"],
+            ["mariadb", "npm:2.5.5"],
             ["module-alias", "npm:2.2.2"],
             ["morgan", "npm:1.10.0"],
             ["prettier", "npm:2.4.1"],
@@ -3041,6 +3111,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["please-upgrade-node", [
+        ["npm:3.2.0", {
+          "packageLocation": "./.yarn/cache/please-upgrade-node-npm-3.2.0-3f653350ed-d87c41581a.zip/node_modules/please-upgrade-node/",
+          "packageDependencies": [
+            ["please-upgrade-node", "npm:3.2.0"],
+            ["semver-compare", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["prelude-ls", [
         ["npm:1.2.1", {
           "packageLocation": "./.yarn/cache/prelude-ls-npm-1.2.1-3e4d272a55-cd192ec0d0.zip/node_modules/prelude-ls/",
@@ -3256,6 +3336,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["semver", "npm:7.3.5"],
             ["lru-cache", "npm:6.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["semver-compare", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/semver-compare-npm-1.0.0-33f7033df0-dd1d7e2909.zip/node_modules/semver-compare/",
+          "packageDependencies": [
+            ["semver-compare", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]

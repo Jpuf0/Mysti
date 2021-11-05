@@ -10,6 +10,7 @@ moduleAlias.addAliases({
 	"@config": `${d}/src/config`,
 	"@util": `${d}/src/util`,
 	"@handlers": `${d}/src/util/handlers`,
+	"@db": `${d}/src/db`,
 	"@events": `${d}/src/events`,
 	"@Mysti": `${d}/src/main`
 });

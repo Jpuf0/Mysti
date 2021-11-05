@@ -5,6 +5,7 @@ import { errorsDir, eventsDir, mainLogsDir } from "@config";
 import Logger from "@util/Logger";
 import { Strings, Utility } from "@uwu-codes/utils";
 import ClientEvent from "@util/ClientEvent";
+import db from "@db";
 
 export default class Mysti extends Client {
   events = new Map<string, ClientEvent>();
@@ -16,6 +17,7 @@ export default class Mysti extends Client {
   async launch() {
     this.checkDirs();
     await this.loadEvents();
+    await db.init(true);
 		await this.connect();
 	}
 
