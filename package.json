@@ -1,5 +1,5 @@
 {
-   "buildDate": 1636114555874,
+   "buildDate": null,
    "name": "mysti",
    "packageManager": "yarn@3.1.0",
    "main": "index.js",
@@ -25,6 +25,7 @@
    },
    "dependencies": {
       "@types/fs-extra": "^9.0.13",
+      "@types/ioredis": "^4.28.1",
       "@types/module-alias": "^2.0.1",
       "@uwu-codes/types": "^1.0.5",
       "@uwu-codes/utils": "^1.0.55",
@@ -33,6 +34,7 @@
       "eris": "https://github.com/DonovanDMC/eris",
       "express": "^4.17.1",
       "fs-extra": "^10.0.0",
+      "ioredis": "^4.28.0",
       "mariadb": "^2.5.5",
       "module-alias": "^2.2.2",
       "morgan": "^1.10.0",

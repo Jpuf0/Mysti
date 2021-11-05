@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@smol-code/tsconfig", "npm:1.0.0"],
             ["@types/express", "npm:4.17.13"],
             ["@types/fs-extra", "npm:9.0.13"],
+            ["@types/ioredis", "npm:4.28.1"],
             ["@types/module-alias", "npm:2.0.1"],
             ["@types/morgan", "npm:1.9.3"],
             ["@types/node", "npm:16.11.6"],
@@ -53,6 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:76c618c0d5690b675a18a9de3a0ee508f52e9dfb01949224e9f342f534b01ab009243861df1ead6ed30ad38cecfde1d6e342afa0e6914b33e85c7c4d6aebae3b#npm:8.3.0"],
             ["express", "npm:4.17.1"],
             ["fs-extra", "npm:10.0.0"],
+            ["ioredis", "npm:4.28.0"],
             ["mariadb", "npm:2.5.5"],
             ["module-alias", "npm:2.2.2"],
             ["morgan", "npm:1.10.0"],
@@ -292,6 +294,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-ioredis-npm-4.27.8-73227263de-c718933d6e.zip/node_modules/@types/ioredis/",
           "packageDependencies": [
             ["@types/ioredis", "npm:4.27.8"],
+            ["@types/node", "npm:16.11.6"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.28.1", {
+          "packageLocation": "./.yarn/cache/@types-ioredis-npm-4.28.1-ccd92797b4-2d5adc6ce3.zip/node_modules/@types/ioredis/",
+          "packageDependencies": [
+            ["@types/ioredis", "npm:4.28.1"],
             ["@types/node", "npm:16.11.6"]
           ],
           "linkType": "HARD",
@@ -2840,6 +2850,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@smol-code/tsconfig", "npm:1.0.0"],
             ["@types/express", "npm:4.17.13"],
             ["@types/fs-extra", "npm:9.0.13"],
+            ["@types/ioredis", "npm:4.28.1"],
             ["@types/module-alias", "npm:2.0.1"],
             ["@types/morgan", "npm:1.9.3"],
             ["@types/node", "npm:16.11.6"],
@@ -2855,6 +2866,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:76c618c0d5690b675a18a9de3a0ee508f52e9dfb01949224e9f342f534b01ab009243861df1ead6ed30ad38cecfde1d6e342afa0e6914b33e85c7c4d6aebae3b#npm:8.3.0"],
             ["express", "npm:4.17.1"],
             ["fs-extra", "npm:10.0.0"],
+            ["ioredis", "npm:4.28.0"],
             ["mariadb", "npm:2.5.5"],
             ["module-alias", "npm:2.2.2"],
             ["morgan", "npm:1.10.0"],

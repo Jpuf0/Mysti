@@ -17,7 +17,7 @@ export default class Mysti extends Client {
   async launch() {
     this.checkDirs();
     await this.loadEvents();
-    await db.init(true);
+    await db.init(true, true);
 		await this.connect();
 	}
 
